@@ -18,7 +18,9 @@ while True:
      elif 計算類型=="3":
         print(f"{no1}*{no2}={乘法(no1,no2)}")
      elif 計算類型=="4":
-        print(f"{no1}/{no2}={除法(no1,no2)}")        
+        print(f"{no1}/{no2}={除法(no1,no2)}")
+        if 除法==1/0:
+            print("ZeroDivisionError: division by zero")                  
     else:
         print("error")
         break
